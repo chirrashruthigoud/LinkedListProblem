@@ -78,6 +78,18 @@ namespace LinkedListProblem
             return head;
         }
 
+        public Node RemoveFirstNode()
+        {
+            if (this.head == null)
+            {
+
+                return null;
+            }
+            Console.WriteLine("When Remove first element");
+            this.head = this.head.next;
+            return this.head;
+        }
+
     }
 }
 
