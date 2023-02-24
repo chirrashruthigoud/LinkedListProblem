@@ -8,12 +8,11 @@ namespace DataStructure
     {
         public static void Main(string[] args)
         {
-            LinkedList link = new LinkedList();
-            link.Add(30);
-            link.Add(80);
-            link.Add(50);
-            link.Add(10);
-            link.display();
+            LinkedList linked = new LinkedList();
+            linked.Append(56); 
+            linked.Append(30);
+            linked.Append(70);
+            linked.display();
         }
     }
 }
