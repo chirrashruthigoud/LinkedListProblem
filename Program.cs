@@ -1,4 +1,5 @@
 ﻿
+using LinkedListProblem;
 using System.Collections.Generic;
 
 namespace DataStructure
@@ -7,12 +8,12 @@ namespace DataStructure
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome Linked List Problem");
-           /* LinkedList linked = new LinkedList();
-            linked.add(56);
-            linked.add(30);
-            linked.add(70);
-            linked.Display();*/
+            LinkedList link = new LinkedList();
+            link.Add(30);
+            link.Add(80);
+            link.Add(50);
+            link.Add(10);
+            link.display();
         }
     }
 }
