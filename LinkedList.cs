@@ -9,8 +9,7 @@ namespace LinkedListProblem
     public class LinkedList
     {
         public Node head;
-
-        public void add(int data)
+        public void Add(int data)
         {
             Node node = new Node(data);
 
@@ -24,32 +23,27 @@ namespace LinkedListProblem
                 while (temp.next != null)
                 {
                     temp = temp.next;
-
                 }
                 temp.next = node;
-
             }
-            Console.WriteLine("{0} insert into linked List ", node.data);
-
+            Console.WriteLine("{0} inserted into linked list", node.data);
         }
 
-        public void Display()
+        public void display()
         {
             Node temp = this.head;
             if (temp == null)
             {
-                Console.WriteLine("LinkedList is empty");
+                Console.WriteLine("Linked list is Empty");
                 return;
-
             }
-            Console.WriteLine("After storing in LinkedList value!!");
             while (temp != null)
             {
-
-                Console.Write(temp.data + " ");
+                Console.WriteLine(temp.data + " ");
                 temp = temp.next;
             }
         }
+
     }
 }
 
