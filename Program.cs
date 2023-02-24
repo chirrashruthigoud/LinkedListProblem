@@ -12,7 +12,9 @@ namespace DataStructure
             linked.Append(56); 
             linked.Append(30);
             linked.Append(70);
-            linked.display();
+            linked.Display();
+            linked.InsertAtParticularPosition(2, 40);
+            linked.Display();
         }
     }
 }
