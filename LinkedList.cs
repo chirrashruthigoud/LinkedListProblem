@@ -90,7 +90,7 @@ namespace LinkedListProblem
             return this.head;
         }
 
-        // Last value Remove..............................
+        
         public Node RemoveLastNode()
         {
             if (head == null)
@@ -118,6 +118,7 @@ namespace LinkedListProblem
             {
                 if (node.data == value)
                 {
+
                     return count;
 
                 }
@@ -127,6 +128,25 @@ namespace LinkedListProblem
             return count;
         }
 
+        public void del()
+        {
+            int value = 40;
+            Node temp = this.head;
+            int count = 0;
+
+            while (temp != null)
+            {
+                Console.WriteLine(temp.data);
+
+                temp = temp.next;
+                if (temp.data == value)
+                {
+                    temp = temp.next.next;
+                }
+                count++;
+            }
+            Console.WriteLine("Total count : {0} ", count);
+        }
 
     }
 }
